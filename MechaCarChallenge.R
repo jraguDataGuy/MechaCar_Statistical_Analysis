@@ -17,3 +17,13 @@ lot_summary <- Susp_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=
                                        Variance_PSI=var(PSI),
                                        SD_PSI=sd(PSI),
                                        .groups = 'keep')
+#Deliverable 3
+t.test(Susp_Coil$PSI, mu=1500)
+?t.test()
+#Subsets for Analysis
+lot_1_set <- subset(Susp_Coil, Susp_Coil$Manufacturing_Lot=="Lot1")
+lot_2_set <- subset(Susp_Coil, Susp_Coil$Manufacturing_Lot=="Lot2")
+lot_3_set <- subset(Susp_Coil, Susp_Coil$Manufacturing_Lot=="Lot3")
+t.test(lot_1_set$PSI,mu=1500)
+t.test(lot_2_set$PSI, mu=1500)
+t.test(lot_3_set$PSI, mu=1500)
