@@ -1,5 +1,5 @@
-# MechaCar_Statistical_Analysis
-Module 15 - R
+# Mecha Car Statistical Analysis
+AutoRUs has inquired on reviewing production data for their newest care, the MechaCar. Using the data provided, we were able to use statistical testing to make reasonable conclusions on this new business venture. 
 ## Linear Regression to Predict MPG
 We were provided data to analyze MPG based on vehicle length, weight, ground clearance, spoiler clearance, and presence of All Wheel Drive (AWD). Thanks to R studio, this process was quick and painless for us. Our regression analysis produced the following equation:
 
@@ -52,3 +52,10 @@ With this information, we were posed the following question: _The design specifi
 - In lot 3, we evalue that the mean is not statistically similar to the 1500 evaluation. Given the wide standard deviation we saw above, this shouuld not be a bit surprise. The .04168 is below th ecommon significance level of .05. 
 
 ## Study Design: MechaCar vs Competition
+Consumers are what drive our business. In order to maximize our profits, we will need to make sure we stand out against our competition. I would preferably want to run data on consumer preferences first to get information on what drives their buying decisions. For the sake of this exercise, let's assume fuel economy is the number 1 factor in choosing a vehicle. We can easily evaluate our vehicles vs the competition. 
+**Null and Alternative Hypothesis**
+Our null hypothesis would be that MechaCar fuel economy is better than our competition. The alternate would prove our competition is superior
+**Testing**
+To prove this, I would use a t-test in which we subgroup cars by their maker. We would then take the mean of our fuel economy data and assume it to be the mean of the other car companies to compare. For each company in which we reject our null, we will know a consumer is potentially more likely to select that vehicle
+**Data Needs**
+We will need data of fuel economy for cars split out by maker. 
