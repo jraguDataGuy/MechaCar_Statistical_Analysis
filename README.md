@@ -29,3 +29,26 @@ _Does this linear model predict mpg of MechaCar prototypes effectively? Why or w
 - Given our evaluation of R squared would imply a solid fit being closer to 1 than 0. 
 ## Summary Statistics of Suspension Coils
 We were tasked with evaluating production effeciency of suspension coils. There are 3 lots to evaluate, along with a global analysis. 
+
+The summary statistics for all of the cars in all 3 production lots are as follows"
+![Deliverable 2a](https://github.com/jraguDataGuy/MechaCar_Statistical_Analysis/blob/main/Deliverable%202%20-%20Summary.png)
+
+Each lot had the following summary statistics:
+![Deliverable 2b](https://github.com/jraguDataGuy/MechaCar_Statistical_Analysis/blob/main/Deliverable%202%20-%20Lot%20Summary.png)
+
+With this information, we were posed the following question: _The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?_
+- If we evaluate all suspension coils, we are within the production standard.
+- The Variance in Lot 3 exceeds our production standards of 100 PSI variance. We exceeded the standard by 70 PSI. 
+
+## T-Tests on Suspension Coils
+**T-Test for All Lots**
+![Deliverable 3](https://github.com/jraguDataGuy/MechaCar_Statistical_Analysis/blob/main/Deliverable%203%20-%20T-Test.png)
+- For the analysis of all lots, we can conclude that the mean is statistically similar to the presumed mean of 1500 PSI. This is because our p-value exceeds the common significance level of .05
+**T-Test for Each Lot Compared to 1500PSI**
+![Deliverable 3](https://github.com/jraguDataGuy/MechaCar_Statistical_Analysis/blob/main/Deliverable%203%20-%20T-Test%20by%20Lot.png)
+- When we evaluate each lot individually, we can find issue in the individual production lots
+- In lot 1, we evaluate that the mean is statistically similar to the 1500 evaluation. The p-value of 1 exceeds the .05 common significance level
+- In lot 2, we evaluate that the mean is statistically similar to the 1500 evaluation. The p-value of .6 exceeds the .05 common significance level
+- In lot 3, we evalue that the mean is not statistically similar to the 1500 evaluation. Given the wide standard deviation we saw above, this shouuld not be a bit surprise. The .04168 is below th ecommon significance level of .05. 
+
+## Study Design: MechaCar vs Competition
